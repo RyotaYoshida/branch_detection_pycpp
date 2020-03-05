@@ -259,3 +259,7 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/branchDetection_pycpp/201.jpg
+/branchDetection_pycpp/branch_model_99.json
+/branchDetection_pycpp/branch_weights99.h5
+/branchDetection_pycpp/branch_weights_99.h5

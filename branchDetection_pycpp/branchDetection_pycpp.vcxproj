@@ -108,13 +108,28 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\Anaconda3\envs\pycpp\include;D:\Anaconda3\envs\pycpp\Library\include;C:\opencv3.4.1\build\install\include;D:\Anaconda3\envs\pycpp\Lib\site-packages\numpy\core\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\Anaconda3\envs\pycpp\libs;C:\opencv3.4.1\build\install\x64\vc15\lib;D:\Anaconda3\envs\pycpp\Lib\site-packages\numpy\core\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_world341.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ndarray_converter.cpp" />
+    <ClCompile Include="Source.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ndarray_converter.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image_concatenater.py" />
+    <None Include="image_process.py" />
+    <None Include="predict_tool.py" />
+    <None Include="sample.py" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
